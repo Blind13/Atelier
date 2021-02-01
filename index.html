@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier</title>
+    <style>
+        .hidden{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="nom">Nom: </label>
+        <input type="text" name="nom" id="nom" required><br>
+        <span id="message"></span><br>
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" required><br>
+        <br>
+        <label>oui</label>
+        <input type="radio" name="radio" class="radio" id="oui">
+        <label >no</label>
+        <input type="radio" name="radio" class="radio" id="no">
+        <div class="hidden">
+            <select>
+                <option value="0" required disabled>Select</option>
+                <option value="1">Morocco</option>
+                <option value="2">Algeria</option>
+                <option value="3">Tunisia</option>
+                <option value="4">Spain</option>
+                <option value="5">France</option>
+                <option value="6">USA</option>
+                <option value="7">Germany</option>
+                <option value="8">China</option>
+            </select>
+        </div>
+        <div class="subset">
+            <input type="submit" value="se connecte"  id="sub">
+            <input type="reset" value="annuler">
+     </div>
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>
