@@ -7,6 +7,7 @@ var nom = document.getElementById("nom");
 var message = document.getElementById("message");
 var slect = document.querySelector("select");
 var sub = document.querySelector("#sub");
+var password = document.getElementById("password");
 
 //affiche and remove
 function affiche() {
@@ -58,3 +59,13 @@ sub.addEventListener("click",function(e){
    }
 });
 
+let info = {nom : nom.value, pass: password.value, city: select.text};
+localStorage.setItem('Infos', JSON.stringify(info));
+console.log(info);
+
+function afficherLocastorage (){
+ if (localStorage.getItem("nomInfo1") !== null) {
+ var objetStockerString = localStorage .getItem(info) ;
+ var objetStockerJs = JSON.parse(objetStockerString );
+ }
+}
